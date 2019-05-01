@@ -641,7 +641,6 @@ service ril-daemon2 /system/vendor/bin/hw/rild -c 2
     group radio cache inet misc audio log readproc wakelock
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
-
 on property:sys.qbcharger.enable=true
     write /sys/power/wake_lock QuickBoot
     start qbcharger
@@ -651,11 +650,10 @@ on property:sys.qbcharger.enable=false
     stop qbcharger
 
 
-service charger /charger
+service charger /system/bin/charger
     class charger
-    critical
+    group system graphics
     seclabel u:r:charger:s0
-
 
 service qbcharger /charger -m 1
     disabled
