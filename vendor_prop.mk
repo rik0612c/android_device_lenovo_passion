@@ -95,8 +95,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.idletime=600 \
     debug.enable.sglscale=1 \
     persist.sys.strictmode.visual=0 \
-    persist.sys.strictmode.disable=1
-
+    persist.sys.strictmode.disable=1 \
+    debug.sf.enable_gl_backpressure=1
+    
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true
