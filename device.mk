@@ -61,7 +61,6 @@ PRODUCT_PACKAGES += \
     tinypcminfo \
     libtinycompress
 
-
 PRODUCT_PACKAGES += \
     audio.primary.msm8916 \
     libqcompostprocbundle \
