@@ -151,8 +151,6 @@ TARGET_LEGACY_HW_DISK_ENCRYPTION := true
 BOARD_USES_QCNE := true
 
 # Display
-MAX_EGL_CACHE_KEY_SIZE                  := 12*1024
-MAX_EGL_CACHE_SIZE                      := 2048*1024
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000
 OVERRIDE_RS_DRIVER                      := libRSDriver_adreno.so
 
@@ -160,8 +158,6 @@ TARGET_USES_GRALLOC1                  := true
 TARGET_CONTINUOUS_SPLASH_ENABLED      := true
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 TARGET_USES_ION                       := true
-TARGET_USES_NEW_ION_API               :=true
-USE_OPENGL_RENDERER                   := true
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
