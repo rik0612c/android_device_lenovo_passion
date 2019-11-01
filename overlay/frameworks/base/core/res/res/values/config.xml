@@ -158,10 +158,6 @@
         <item>lte_ca:2097152,4194304,8388608,4096,1048576,2097152</item>
     </string-array>
 
-    <!-- Configure ethernet tcp buffersizes in the form:
-         rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
-    <string name="config_wifi_tcp_buffers">524288,2097152,4194304,262144,524288,1048576</string>
-
     <!-- Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
 
@@ -182,15 +178,9 @@
          config to 7. -->
     <add-resource type= "integer" name="config_deviceHardwareKeys">83</add-resource>
 
-    <!-- Boolean indicating whether the wifi chipset has 5GHz frequency band support -->
-    <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
-
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
                   autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">false</bool>
-
-    <!-- Boolean indicating whether the wifi chipset has background scan support -->
-    <bool name="config_wifi_background_scan_support">true</bool>
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
@@ -271,9 +261,6 @@
     -->
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 
-    <!-- Screen brightness used to dim the screen while dozing in a very low power state.
-         May be less than the minimum allowed brightness setting
-         that can be set by the user. -->
     <integer name="config_screenBrightnessDoze">17</integer>
 
     <!-- If true, the doze component is not started until after the screen has been
