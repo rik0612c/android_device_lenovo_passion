@@ -149,6 +149,9 @@ TARGET_LEGACY_HW_DISK_ENCRYPTION := true
 # CNE | DPM
 BOARD_USES_QCNE := true
 
+# DexPreopt debug info
+WITH_DEXPREOPT_DEBUG_INFO := false
+
 # Display
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000
 OVERRIDE_RS_DRIVER                      := libRSDriver_adreno.so
