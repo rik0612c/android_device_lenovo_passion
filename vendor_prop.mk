@@ -96,7 +96,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.enable.sglscale=1 \
     persist.sys.strictmode.visual=0 \
     persist.sys.strictmode.disable=1 \
-    debug.sf.disable_backpressure=1
+    debug.sf.disable_backpressure=1 \
+    debug.sf.latch_unsignaled=1
     
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
