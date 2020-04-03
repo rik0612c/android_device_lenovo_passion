@@ -144,7 +144,6 @@ HEALTHD_BACKLIGHT_LEVEL          := 60
 # Crypto
 TARGET_CRYPTFS_HW_PATH           := vendor/qcom/opensource/cryptfs_hw
 TARGET_HW_DISK_ENCRYPTION        := true
-TARGET_KEYMASTER_WAIT_FOR_QSEE   := true
 TARGET_LEGACY_HW_DISK_ENCRYPTION := true
 
 # CNE | DPM
