@@ -159,6 +159,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# Dedupe VNDK libraries with identical core variants.
+TARGET_VNDK_USE_CORE_VARIANT := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 TARGET_KERNEL_HAVE_EXFAT := true
