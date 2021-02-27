@@ -138,7 +138,6 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 
 # Display
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000
-TARGET_USES_GRALLOC1                  := true
 TARGET_CONTINUOUS_SPLASH_ENABLED      := true
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 TARGET_USES_ION                       := true
@@ -333,7 +332,7 @@ WPA_SUPPLICANT_VERSION           := VER_0_8_X
 MALLOC_SVELTE := true
 
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
-LOCAL_CHECK_ELF_FILES := false
+#LOCAL_CHECK_ELF_FILES := false
 
 # Inherit from the proprietary version
 -include vendor/lenovo/passion/BoardConfigVendor.mk
