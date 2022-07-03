@@ -221,8 +221,8 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG      := passion_defconfig
 BOARD_KERNEL_IMAGE_NAME   := Image.gz-dtb
 
-
-
+# Legacy memfd
+TARGET_HAS_MEMFD_BACKPORT := true
 
 # Lineage Hardware
 BOARD_HARDWARE_CLASS += \
