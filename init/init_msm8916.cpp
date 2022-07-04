@@ -38,13 +38,12 @@
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 #include <android-base/strings.h>
-#include "property_service.h"
+
 #include "vendor_init.h"
 #include "init_msm8916.h"
 using android::base::GetProperty;
 using android::base::ReadFileToString;
 using android::base::Trim;
-using android::init::property_set;
 __attribute__ ((weak))
 void init_target_properties()
 {
@@ -85,22 +84,22 @@ static void init_alarm_boot_properties()
          * 7 -> CBLPWR_N pin toggled (for external power supply)
          * 8 -> KPDPWR_N pin toggled (power key pressed)
          */
+
         if ((Trim(boot_reason) == "3" || tmp == "true")
                 && Trim(power_off_alarm) == "1")
-            property_set("ro.alarm_boot", "true");
+            property_override("ro.alarm_boot", "true");
         else
-            property_set("ro.alarm_boot", "false");
+            property_override("ro.alarm_boot", "false");
 
         if (Trim(boot_reason) == "4")
-             property_set("ro.bootmode", "charger");
+            property_override("ro.bootmode", "charger");
         else
-            property_set("ro.bootmode", "");
+            property_override("ro.bootmode", "");
 
         if (Trim(boot_reason) == "5")
-             property_set("ro.bootmode", "charger");
+            property_override("ro.bootmode", "charger");
         else
-            property_set("ro.bootmode", "");
-
+            property_override("ro.bootmode", "");
     }
 }
 void vendor_load_properties()
@@ -108,7 +107,7 @@ void vendor_load_properties()
 	
     // Init a dummy BT MAC address, will be overwritten later
 	
-    property_set("ro.boot.btmacaddr", "00:00:00:00:00:00");
+    property_override("ro.boot.btmacaddr", "00:00:00:00:00:00");
     init_target_properties();
     init_alarm_boot_properties();
 }
