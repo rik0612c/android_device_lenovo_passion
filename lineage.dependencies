@@ -2,5 +2,9 @@
   {
     "repository": "android_kernel_lenovo_passion",
     "target_path": "kernel/lenovo/passion"
+  },
+  {
+    "repository": "android_hardware_sony_timekeep",
+    "target_path": "hardware/sony/timekeep"
   }
 ]

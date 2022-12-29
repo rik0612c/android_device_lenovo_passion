@@ -464,10 +464,11 @@ PRODUCT_COPY_FILES += \
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
-
-# Time services
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.timed.enable=true
+    
+# TimeKeep
+PRODUCT_PACKAGES += \
+    TimeKeep \
+    timekeep
 
 # Telephony
 PRODUCT_PACKAGES += \

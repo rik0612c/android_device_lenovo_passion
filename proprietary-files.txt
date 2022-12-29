@@ -415,12 +415,8 @@ vendor/lib64/libthermalioctl.so
 vendor/lib/libthermalclient.so
 
 # Time services
--app/TimeService/TimeService.apk:vendor/app/TimeService/TimeService.apk
-bin/time_daemon:vendor/bin/time_daemon
 -vendor/lib64/libtime_genoff.so
-vendor/lib64/libTimeService.so
 -vendor/lib/libtime_genoff.so
-vendor/lib/libTimeService.so
 
 # WiFi
 vendor/lib/libxtwifi_ulp_adaptor.so

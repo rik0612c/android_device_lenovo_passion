@@ -104,11 +104,6 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-recv-passive-client stream 0666 system system
    group root
 
-service time_daemon /system/vendor/bin/time_daemon
-   class late_start
-   user root
-   group root
-
 service location_mq /system/vendor/bin/location-mq
     class late_start
     user gps
@@ -154,7 +149,6 @@ on boot
     mkdir /persist/bluetooth 0770 bluetooth bluetoot
     mkdir /persist/data 0700  system system
     mkdir /persist/display 0770 system graphics
-    mkdir /persist/time 0770 system system
 #    restorecon_recursive /persist
 
 
