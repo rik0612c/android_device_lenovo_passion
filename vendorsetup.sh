@@ -1,3 +1,0 @@
-add_lunch_combo lineage_passion-eng
-add_lunch_combo lineage_passion-userdebug
-add_lunch_combo lineage_passion-user
