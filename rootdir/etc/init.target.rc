@@ -223,12 +223,3 @@ on charger
     start vm_bms
 #    load_all_props
     start qcom-post-boot
-
-#Lenovo-sw wuzb1 2016-08-11 drop vm caches
-on property:sys.vm.drop_caches=*
-    sync
-    write /proc/sys/vm/drop_caches ${sys.vm.drop_caches}
-    service per_mgr /system/bin/pm-service
-    class core
-    user system
-    group system net_raw
