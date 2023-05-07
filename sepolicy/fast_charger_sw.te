@@ -26,8 +26,8 @@ allow fast_charger_sw fast_charger_sw : lnk_file { ioctl read getattr lock open 
 allow fast_charger_sw fast_charger_sw : process { fork sigchld sigkill sigstop signull signal getsched setsched getsession getpgid setpgid getcap setcap getattr setrlimit } ; 
 allow fast_charger_sw fast_charger_sw : unix_dgram_socket { ioctl read write create getattr setattr lock append bind connect getopt setopt shutdown sendto } ; 
 allow fast_charger_sw fast_charger_sw : unix_stream_socket { ioctl read write create getattr setattr lock append bind connect listen accept getopt setopt shutdown connectto } ; 
-allow fast_charger_sw fast_charger_sw_exec : file { read getattr execute entrypoint open } ; 
-allow fast_charger_sw fast_charger_sw_tmpfs : file { read write } ; 
+#allow fast_charger_sw fast_charger_sw_exec : file { read getattr execute entrypoint open } ; 
+#allow fast_charger_sw fast_charger_sw_tmpfs : file { read write } ; 
 allow fast_charger_sw init : process sigchld ; 
 allow fast_charger_sw sysfs : file { ioctl read write getattr lock append open } ; 
 allow fast_charger_sw toolbox_exec : file { ioctl read getattr lock execute execute_no_trans open } ; 
