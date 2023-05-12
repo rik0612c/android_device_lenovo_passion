@@ -35,7 +35,7 @@
 /system/vendor/bin/location-mq                      u:object_r:location_exec:s0
 
 #Root files
-/firmware(/.*)?						u:object_r:firmware_file:s0
+#/firmware(/.*)?						u:object_r:firmware_file:s0
 
 # tfa9890
 /dev/i2c-4									u:object_r:audio_device:s0
