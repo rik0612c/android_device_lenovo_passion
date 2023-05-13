@@ -371,10 +371,10 @@ on post-fs-data
     chown system system /data/shared
 
     #Create directory from Bluetooth
-    mkdir /data/misc/bluedroid 02770 bluetooth net_bt_stack
+    mkdir /data/misc/bluedroid 02770 bluetooth
     # Fix the access permissions and group ownership for 'bt_config.conf'
     chmod 0660 /data/misc/bluedroid/bt_config.con
-    chown bluetooth net_bt_stack /data/misc/bluedroid/bt_config.conf
+    chown bluetooth /data/misc/bluedroid/bt_config.conf
     
     #Create directory for Keystore
     mkdir /data/misc/keystore 0700 keystore keystore
