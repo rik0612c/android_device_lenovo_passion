@@ -332,6 +332,9 @@ WPA_SUPPLICANT_VERSION           := VER_0_8_X
 # Optimize
 MALLOC_SVELTE := true
 
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+LOCAL_CHECK_ELF_FILES := false
+
 # Inherit from the proprietary version
 -include vendor/lenovo/passion/BoardConfigVendor.mk
 
