@@ -197,7 +197,6 @@ lib64/hw/fingerprint.ranchu.so
 vendor/lib64/hw/gatekeeper.msm8916.so
 
 # GPS
-bin/loc_launcher:vendor/bin/loc_launcher|fc5afe88ffb6a59fb32371fd6555f901ab1350e4
 bin/location-mq:vendor/bin/location-mq|91604af318c77f8b367c0ce9a5937612f6448f80
 bin/lowi-server:vendor/bin/lowi-server|21108f9b5371a2bb9091d52292f66322e888082a
 lib64/libloc_api_v02.so|5e7123b7537820ca216bf032af232fd861afce17
