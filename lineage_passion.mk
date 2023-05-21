@@ -47,11 +47,3 @@ PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_RELEASE_NAME := passion
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
-
-# Override build properties.
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="passion_row-user 6.0.1 MMB29M P1a42_S288_160721_ROW release-keys"
-    TARGET_DEVICE="passion"
-
-BUILD_FINGERPRINT := Lenovo/passion_row/P1a42:6.0.1/MMB29M/P1a42_S288_160721_ROW:user/release-keys
-
